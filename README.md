@@ -9,4 +9,14 @@ $ cd grimace
 $ npm install
 ```
 
+## Lift the server
+
+```shell
+sails lift
+```
+
+At this point, if you visit (http://localhost:1337/) you will see the default home page.
+
+
+
 a [Sails](http://sailsjs.org) application
