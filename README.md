@@ -17,7 +17,7 @@ $ npm install
 ## Lift the server
 
 ```shell
-sails lift
+$ sails lift
 ```
 
 At this point, if you visit (http://localhost:1337/) you will see the default home page.
