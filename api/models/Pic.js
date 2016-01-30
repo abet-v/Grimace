@@ -1,5 +1,5 @@
 /**
-* User.js
+* Pic.js
 *
 * @description :: TODO: You might write a short summary of how this model works and what it represents here.
 * @docs        :: http://sailsjs.org/#!documentation/models
@@ -9,29 +9,24 @@ module.exports = {
 
   attributes: {
 
-  	firstName: {
-  		type: 'string',
-  		defaultsTo: 'undefined'
+  	url: {
+  		type: "string"
   	},
 
-  	lastName: {
-  		type: 'string'
+  	fd: {
+  		type: 'integer'
   	},
 
-  	login: {
-  		type: 'string'
+  	ranking: {
+  		type: 'float'
   	},
 
-  	email: {
-  		type: 'email'
+  	owner: {
+  		model: 'User'
   	},
 
-  	grimaces: {
-  		collection: 'Pic'
-  	},
-
-  	friends: {
-  		collection: 'User'
+  	votes: {
+  		collection: 'Vote'
   	}
 
   }

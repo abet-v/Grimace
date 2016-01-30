@@ -6,6 +6,13 @@
  */
 
 module.exports = {
-	
+
+	hi: function (req, res) {
+    	return res.send("Hi there!");
+  	},
+
+	profile: function (req, res) {
+		return res.send(this);
+	}
 };
 
