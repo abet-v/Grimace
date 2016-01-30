@@ -22,6 +22,6 @@ $ sails lift
 
 At this point, if you visit (http://localhost:1337/) you will see the default home page.
 
-
+version aviable on https://grimace-app.herokuapp.com/
 
 a [Sails](http://sailsjs.org) application
