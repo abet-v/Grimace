@@ -8,7 +8,7 @@
 module.exports = {
 
 	uploadGrimace: function (req, res) {
-	  req.file('avatar').upload({
+	  req.file('grimace').upload({
 	    // don't allow the total upload size to exceed ~10MB
 	    maxBytes: 10000000
 	  },function whenDone(err, uploadedFiles) {
@@ -20,7 +20,7 @@ module.exports = {
 	      return res.badRequest('No file was uploaded');
 	    }
 	    // Save the "fd" and the url where the avatar for a user can be accessed
-	    User.addGrimace(req.session.me, {
+	    User.update(req.session.me, {
 	      // Generate a unique URL where the avatar can be downloaded.
 	      avatarUrl: require('util').format('%s/user/avatar/%s', sails.getBaseUrl(), req.session.me),
 	      // Grab the first file and use it's `fd` (file descriptor)
