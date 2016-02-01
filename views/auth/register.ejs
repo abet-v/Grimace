@@ -4,6 +4,10 @@
   <% }) %>
 <% } %>
 
+  {{#each providers}}
+        <a href="/auth/{{slug}}">{{name}}</a>
+   {{/each}}
+
 <form role="form" action="/auth/local/register" method="post">
   <input type="text" name="username" placeholder="Username">
   <input type="text" name="email" placeholder="Email">
